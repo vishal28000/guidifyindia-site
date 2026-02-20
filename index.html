@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Guidify India | Career Guidance for Students</title>
+  <meta name="description" content="Guidify India helps students choose the right stream, degree, and career path with personalized counseling and expert guidance.">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+document.getElementById("payBtn").onclick = function () {
+  var options = {
+    "key": "YOUR_RAZORPAY_KEY",
+    "amount": 99900,
+    "currency": "INR",
+    "name": "Guidify India",
+    "description": "Career Guidance Session",
+    "handler": function (response){
+      alert("Payment successful. We will contact you shortly.");
+    },
+    "theme": {
+      "color": "#1E3A8A"
+    }
+  };
+  var rzp = new Razorpay(options);
+  rzp.open();
+}
+</script>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Guidify India</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#process">How It Works</a>
+    <a href="#audience">Who We Help</a>
+    <a href="#book">Book</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Clear Your Career Confusion.<br>Choose the Right Path.</h1>
+    <p>Personalized career guidance for students after 10th, 12th, and Engineering.</p>
+    <div class="cta">
+      <a class="btn primary" href="#form">Get Career Guidance</a>
+      <a class="btn secondary" href="#book">Book Session</a>
+    </div>
+    <div class="emotional">You don’t have to figure out your career alone.</div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>What Students & Parents Say</h2>
+
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      “I was confused between Commerce and Science. Guidify helped me choose Commerce confidently.”
+      <div class="name">— Class 10 Student</div>
+    </div>
+
+    <div class="testimonial">
+      “My son was unsure after 12th. The counseling session gave complete clarity.”
+      <div class="name">— Parent</div>
+    </div>
+
+    <div class="testimonial">
+      “I switched from Mechanical to IT career path with confidence.”
+      <div class="name">— Engineering Student</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="problem">
+  <h2>Too Many Career Choices. No Clear Direction.</h2>
+  <p>Students today face overwhelming options after 10th, 12th, and Engineering. Without clarity, many choose the wrong stream or degree — leading to stress and dissatisfaction.</p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Career Guidance Services</h2>
+  <div class="grid">
+    <div class="card">Stream Selection (After 10th)</div>
+    <div class="card">Career Path (After 12th)</div>
+    <div class="card">Engineering Branch Guidance</div>
+    <div class="card">Career Switching Guidance</div>
+    <div class="card">Higher Studies Direction</div>
+    <div class="card">Personalized Counseling Session</div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <h2>Your Career Clarity Journey</h2>
+  <div class="steps">
+    <div>1️⃣ Student Assessment</div>
+    <div>2️⃣ Career Mapping</div>
+    <div>3️⃣ Expert Counseling</div>
+    <div>4️⃣ Decision Confidence</div>
+  </div>
+</section>
+
+<section id="audience" class="audience">
+  <h2>Who We Help</h2>
+  <ul>
+    <li>Class 9–10 students choosing stream</li>
+    <li>Class 11–12 students choosing degree</li>
+    <li>Engineering students unsure of career</li>
+    <li>Parents concerned about child’s future</li>
+  </ul>
+</section>
+
+<section id="book" class="book">
+  <h2>Book Your Personalized Career Guidance Session</h2>
+  <p>One session can change your career path.</p>
+  <a class="btn primary" href="#form">Book Counseling Session</a>
+</section>
+
+<section id="form" class="form">
+  <h2>Get Career Guidance</h2>
+
+  <form name="guidance" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="guidance">
+
+    <input type="text" name="name" placeholder="Student Name" required>
+    <input type="text" name="class" placeholder="Class (10/12/Engineering)" required>
+    <input type="text" name="confusion" placeholder="Career Confusion Area">
+    <input type="tel" name="phone" placeholder="Parent Contact Number" required>
+    <input type="email" name="email" placeholder="Email">
+
+    <button type="submit" class="btn primary">Start My Career Clarity</button>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-logo">Guidify India</div>
+  <p>Right career decision with clarity and confidence.</p>
+  <p>info@guidifyindia.com</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919975122711" target="_blank">💬</a>
+
+</body>
+</html>
